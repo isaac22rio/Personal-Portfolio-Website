@@ -363,6 +363,7 @@
 
 .main__img--container {
     text-align: center;
+    border-radius: 20%;
 }
 
 .main__img--card {
@@ -410,7 +411,7 @@
 
     .main__content {
         text-align: center;
-        margin-bottm: 4rem;
+        margin-bottom: 4rem;
     }
 
     .main__content h1 {
@@ -488,9 +489,9 @@
 
 .projects__card {
     margin: 10px;
-    height: 425px;
+    height: 500px;
     width: 300px;
-    border-radius: 4px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -499,10 +500,20 @@
     transition: 0.3s ease-in;
 }
 
+.projects__card img{
+    padding: 30px;
+    border-radius: 20%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .projects__card:nth-child(2) {
-    background: #0cebeb;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0cebeb; 
+    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); 
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
 }
 
 .projects__card:nth-child(3) {
@@ -523,13 +534,15 @@
 
 .projects__card h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .projects__card p{
     text-align: center;
-    margin-top: 24px;
+    margin-top: 10px;
     font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .projects__btn {
@@ -538,7 +551,17 @@
     margin-top: 16px;
 }
 
+.projects__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
 .projects__card button {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
     color: #fff;
     padding: 14px 24px;
     border: none;
@@ -546,10 +569,7 @@
     border-radius: 4px;
     background: #131313;
     font-size: 1rem;
-}
-
-.projects__card button:hover {
-    cursor:pointer;
+    text-decoration: none;
 }
 
 /* expands card when hovering */
