@@ -1,2 +1,2 @@
-# AI-Intern
- ai powered tool to create, edit and improve resumes, send cover letters and messeages to employers and such.
+# Personal WEbsite
+ My very first personal website to showcase my skills and experience as well as some projects I am working on.
